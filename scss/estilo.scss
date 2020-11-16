@@ -1,0 +1,92 @@
+@import "colores";
+
+body { font-family: 'Lato';}
+
+h1,h2 { color: $verdeoscuro;}
+
+table {
+    border-radius: 20px;
+    background-color: $fondoclaro;
+    font-size: 16px;
+    color:$verdeoscuro;
+}
+
+td {
+    line-height: 1.5;
+    list-style:square inside;
+    list-style-image: url(https://www.flaticon.com/svg/static/icons/svg/862/862483.svg);
+}
+
+h3 {
+    color: $verdeoscuro;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/* Block */
+.button {
+    text-decoration: none;
+    background-color: $fondoclaro;
+    color: $verdeoscuro;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 5px;
+  }
+    
+  /* Element */
+.button__text {
+  @extend .button;
+    padding: 0 30px;
+    border-radius: 0 5px 5px 0;
+  }
+
+  /* Modifier */
+.button--big {
+    @extend .button;
+    font-size: 28px;
+    padding: 10px;
+    font-weight: 400;
+  }
+
+  /* Modifier */
+.button--green {
+    @extend .button;
+    border-color: $verdeclaro;
+    color: $fondoclaro;
+    background-color:$verdeclaro;
+  }
+
+@mixin container($ancho, $alto, $colorfondo) {
+    width: $ancho;
+    height: $alto;
+    background-color: $colorfondo;
+    font-size: 25px;
+    border-radius: 5%;
+    text-align: center;
+    margin: 5px;
+  } 
+  
+.box_instagram{
+    @include container(200px, 35px, $fondoclaro)
+  }
+.box_facebook{
+    @include container(200px, 35px, $verdeclaro)
+  }
+.box_youtube {
+    @include container(200px, 35px, $verdeoscuro)
+  }

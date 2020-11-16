@@ -1,0 +1,115 @@
+body {
+  font-family: 'Lato';
+}
+
+h1, h2 {
+  color: #32776B;
+}
+
+table {
+  border-radius: 20px;
+  background-color: #caf1e8;
+  font-size: 16px;
+  color: #32776B;
+}
+
+td {
+  line-height: 1.5;
+  list-style: square inside;
+  list-style-image: url(https://www.flaticon.com/svg/static/icons/svg/862/862483.svg);
+}
+
+h3 {
+  color: #32776B;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* Block */
+.button, .button__text, .button--big, .button--green {
+  text-decoration: none;
+  background-color: #caf1e8;
+  color: #32776B;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 5px;
+}
+
+/* Element */
+.button__text {
+  padding: 0 30px;
+  border-radius: 0 5px 5px 0;
+}
+
+/* Modifier */
+.button--big {
+  font-size: 28px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+/* Modifier */
+.button--green {
+  border-color: #5DC5AD;
+  color: #caf1e8;
+  background-color: #5DC5AD;
+}
+
+.box_instagram {
+  width: 200px;
+  height: 35px;
+  background-color: #caf1e8;
+  font-size: 25px;
+  border-radius: 5%;
+  text-align: center;
+  margin: 5px;
+}
+
+.box_facebook {
+  width: 200px;
+  height: 35px;
+  background-color: #5DC5AD;
+  font-size: 25px;
+  border-radius: 5%;
+  text-align: center;
+  margin: 5px;
+}
+
+.box_youtube {
+  width: 200px;
+  height: 35px;
+  background-color: #32776B;
+  font-size: 25px;
+  border-radius: 5%;
+  text-align: center;
+  margin: 5px;
+}
+/*# sourceMappingURL=estilo.css.map */
