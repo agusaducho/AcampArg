@@ -1,6 +1,8 @@
 @import "colores";
 
-body { font-family: 'Lato';}
+body { 
+  font-family: 'Lato';
+}
 
 h1,h2 { color: $verdeoscuro;}
 
@@ -18,7 +20,7 @@ td {
 }
 
 h3 {
-    color: $verdeoscuro;
+    color: $verdeoscuro;  
     animation-duration: 3s;
     animation-name: slidein;
   }
