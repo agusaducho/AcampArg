@@ -49,13 +49,6 @@ h3 {
     font-weight: 600;
     padding: 10px 5px;
   }
-    
-  /* Element */
-.button__text {
-  @extend .button;
-    padding: 0 30px;
-    border-radius: 0 5px 5px 0;
-  }
 
   /* Modifier */
 .button--big {
@@ -82,13 +75,3 @@ h3 {
     text-align: center;
     margin: 5px;
   } 
-  
-.box_instagram{
-    @include container(200px, 35px, $fondoclaro)
-  }
-.box_facebook{
-    @include container(200px, 35px, $verdeclaro)
-  }
-.box_youtube {
-    @include container(200px, 35px, $verdeoscuro)
-  }
